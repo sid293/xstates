@@ -89,6 +89,9 @@ function App() {
           return <option value={country}>{country}</option>
         })}
       </select>
+      {selectedCity &&
+        <p style={{fontWeight:"bold"}}>you selected {selectedCountry},<span style={{color:"gray"}} >{selectedState}, {selectedCity}</span>  </p>
+      }
 
     </div>
   );
